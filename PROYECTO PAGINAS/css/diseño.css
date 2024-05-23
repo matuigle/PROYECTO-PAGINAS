@@ -1,0 +1,15 @@
+body {
+    background-color: #000000; /* Aquí puedes poner el color que desees */
+    color: #ffffff; /* Color del texto */
+}
+
+.arreglarimg {
+    width: 1820px; /* Ancho del contenedor */
+    height: 500px; /* Altura del contenedor */
+}
+.arreglarimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Puedes usar cover, contain, fill, etc. */
+}
+
