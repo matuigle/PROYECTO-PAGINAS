@@ -1,17 +1,31 @@
 body {
-    background-color: #000000; /* Aquí puedes poner el color que desees */
+    background-color: #000000; 
     color: #ffffff; /* Color del texto */
+    margin: 0;
+    padding: 0;
+    height: 500vh; /* Altura total de la ventana */
+    justify-content: center;
+    align-items: center;
 }
-
-.arreglarimg {
-    width: 1820px; /* Ancho del contenedor */
-    height: 500px; /* Altura del contenedor */
+.franja-arriba {
+    display: flex; /* Define este div como un contenedor flex */
+    flex-direction: row; 
+    width: 100%; /* Ancho completo */
+    height: 80px; /* Altura completa */
+    align-content: flex-start;
+    background-color: #202020;
 }
-.arreglarimg img {
+        
+/*tituloprincipal (inicio)*/
+.titulocentrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Puedes usar cover, contain, fill, etc. */
 }
+
+
 .tituloinicial {
     opacity: 0;
     animation: fadeIn 2s ease-in forwards; 
@@ -22,4 +36,15 @@ body {
         opacity: 1;
     }
 }
+/*tituloprincipal (final)*/
 
+.arreglarimg { 
+    width: 1820px; 
+    height: 500px; 
+}
+
+.arreglarimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Puedes usar cover, contain, fill, etc. */
+}
