@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /*franja arriba (inicio)*/
 .franja-arriba {
     display: flex; /* Define este div como un contenedor flex */
@@ -17,7 +18,7 @@ body {
     background-color: #202020;
 }
 /*franja arriba (final)*/
-        
+
 /*tituloprincipal (inicio)*/
 .titulocentrado {
     display: flex;
@@ -28,15 +29,15 @@ body {
 }
 
 .tituloinicial {
-    opacity: 0;
-    animation: fadeIn 2s ease-in forwards; 
+    animation: fadeIn 1.8s ease
+}
+@keyframes fadeIn {
+    0% {opacity: 0;
+    filter: blur(20px);}
+    10%{ opacity: 1;
+    filter: brightness(2) blur(10px);}
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
 /*tituloprincipal (final)*/
 
 /* imagen1*/
@@ -45,19 +46,28 @@ body {
     height: 500px; 
 }
 
+/*codigo para fade up (en html usar class="fadeup":
+img {
+opacity: 0.5;
+transition: all 0.5s;
+}
+.transform_up {transform: translateY(20%);}
+.transform_down {transform: translateY(-20%);}
+.transform_left {transform: translateX(20%);}
+.transform_right {transform: translateX(-20%);}
+
+.aparece{
+    opacity: 1;
+    transform: none;
+}
+*/
+
+
+
 .arreglarimg img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Puedes usar cover, contain, fill, etc. */
-}
-.imagen1 {
-    opacity: 0;
-    animation: fadeIn1 2.3s ease-in forwards; 
-}
-@keyframes fadeIn1 {
-    to {
-        opacity: 1;
-    }
 }
 
 /*imagen1 final*/
