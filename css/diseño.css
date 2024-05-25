@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+/*franja arriba (inicio)*/
 .franja-arriba {
     display: flex; /* Define este div como un contenedor flex */
     flex-direction: row; 
@@ -15,6 +16,7 @@ body {
     align-content: flex-start;
     background-color: #202020;
 }
+/*franja arriba (final)*/
         
 /*tituloprincipal (inicio)*/
 .titulocentrado {
@@ -37,6 +39,7 @@ body {
 }
 /*tituloprincipal (final)*/
 
+/* imagen1*/
 .arreglarimg { 
     width: 1820px; 
     height: 500px; 
@@ -47,3 +50,16 @@ body {
     height: 100%;
     object-fit: cover; /* Puedes usar cover, contain, fill, etc. */
 }
+.imagen1 {
+    opacity: 0;
+    animation: fadeIn1 2.3s ease-in forwards; 
+}
+@keyframes fadeIn1 {
+    to {
+        opacity: 1;
+    }
+}
+
+/*imagen1 final*/
+
+/*scrollfade inicio*/
