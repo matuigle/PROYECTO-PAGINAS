@@ -1,3 +1,5 @@
+
+
 /*codigo para fade up:
 
 window.addEventListener('scroll', function(){
@@ -12,6 +14,4 @@ window.addEventListener('scroll', function(){
     else{
         imagen.classList.remove('aparece');
     }
-})
-
-*/
+}) */
