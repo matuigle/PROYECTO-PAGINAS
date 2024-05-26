@@ -1,4 +1,5 @@
 
+
 let animacion = gsap.timeline();
 animacion.from(".p3", {duration: 0.5, opacity: 0, ease: "power1.inOut" })
 .from(".p3", {duration: 0.5, filter: "blur(10px)", ease: "power1.inOut", delay: 0.2 })
