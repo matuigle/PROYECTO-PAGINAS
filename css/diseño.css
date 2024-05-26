@@ -8,6 +8,9 @@ body {
     height: 500vh; /* Altura total de la ventana */
     justify-content: center;
     align-items: center;
+    background: radial-gradient(circle at top, rgb(153, 0, 255), #26003b, #26003b, #26003b, #26003b, #26003b, #170024, #170024,#170024); /* Fondo con degradado circular estático */
+    background-size: 1500vh 500vh; /* Tamaño del degradado para que sea circular */
+    background-position: center; /* Posición del degradado en el centro */
 }
 /*prueba*/
 .logo{
@@ -20,10 +23,10 @@ header{
     padding: 0;
     top: 0;
     left: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #26003b;
 }
 header nav{
-    background-color: rgb(0, 0, 0);
+    background-color: #26003b;
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
@@ -85,7 +88,7 @@ main{
     position: relative;
     height: 100vh;
     width: 99vw;
-    overflow: hidden;
+
 }
 .para{
     pointer-events: none;
@@ -94,7 +97,7 @@ main{
 
 .p1{
     position: absolute;
-    z-index: 8;
+    z-index: 7;
     width: 400px;
     top: 45.3%;
     left: 45.5%;
@@ -102,7 +105,7 @@ main{
 }
 .p2{
     position: absolute;
-    z-index: 9;
+    z-index: 8;
     width: 400px;
     top: 59.8%;
     left: 55.5%;
@@ -115,7 +118,7 @@ main{
     font-style: normal;
     font-size: 50px;
     position: absolute;
-    z-index: 10;
+    z-index: 9;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -131,7 +134,7 @@ main{
     }
 .p4{   
     position: absolute;
-    z-index: 7;
+    z-index: 6;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -146,7 +149,7 @@ main{
 }
 .p5{   
     position: absolute;
-    z-index: 6;
+    z-index: 5;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -161,68 +164,55 @@ main{
 }
 .p6{
     position: absolute;
-    z-index: 5;
-    width: 400px;
-    top: 15%;
-    left: 7%;
+    z-index: 4;
+    width: 350px;
+    top: 28%;
+    left: 12%;
     transform: translate(-50%, -50%);
 }
 .p7{
     position: absolute;
-    z-index: 4;
-    width: 400px;
-    top: 85%;
-    left: 93%;
+    z-index: 3;
+    width: 350px;
+    top: 79.5%;
+    left: 88%;
     transform: translate(-50%, -50%);
 }
+
+
 .p8{
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     width: 400px;
-    top: 15%;
-    left: 90%;
+    top: 18%;
+    left: 88%;
     transform: translate(-50%, -50%) rotate(90deg);
 }
 .p9{
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 400px;
     top: 85%;
-    left: 10%;
+    left: 15%;
     transform: translate(-50%, -50%) scaleX(-1) rotate(20deg);
 }
-.p10{
-    position: absolute;
-    z-index: 1;
-    width: 3920px;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-}
 /*prueba*/
+/*presentacion1*/
 
-
-
-
-
-
-/*presentacion
-
-.presentacion1 {
+.presentacion1{
 font-family: "DM Sans", sans-serif;
-font-optical-sizing: auto;
-font-weight: 251;
-Font-style: normal;
-font-size: 17px;
-width: 800px;
-height: 100px;
-position: relative;
-left: 500px;
-text-align: center;
+width: 500px;
+height: 150px;
+border: 2px solid #ffffff;
+padding: 10px;
+border-radius: 10px;
+transition: transform 0.3s ease;
 }
-*/
-
-
-
-
-
+.presentacion1:hover{
+    transform: scale(1.1);
+}
+.presentacion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
