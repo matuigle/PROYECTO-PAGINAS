@@ -29,16 +29,16 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.fromTo(".presentacion1", 
     {
         opacity: 0, 
-        y: 100
+        y: 200
     }, 
     {
         opacity: 1,
         y: 0,
-        duration: 4,
+        duration: 5,
         scrollTrigger: {
             trigger: ".presentacion1", // Elemento que activa la animación
-            start: "top 80%", // Iniciar la animación cuando el elemento está en 80% de la vista
-            end: "top 100%", // Terminar la animación cuando el elemento está en 100% de la vista
+            start: "top 90%", // Iniciar la animación cuando el elemento está en 0% de la vista
+            end: "top 70%", // Terminar la animación cuando el elemento está en 100% de la vista
             scrub: true // Smooth scrubbing, animación sincronizada con el scroll
         }
     }

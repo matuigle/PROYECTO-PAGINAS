@@ -239,7 +239,7 @@ opacity: 0;
         100% {
           color: #ffffff; /* Color final del borde */
       }}
-     
+     /* nose:
     .Igle{
         font-family: "DM Sans", sans-serif;
         font-size: 15px;
@@ -269,24 +269,24 @@ opacity: 0;
 }
   
   .Arias {
-    border: 2px solid #ffffff; /* Estilo inicial del borde */
-    animation: border-blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+    border: 2px solid #ffffff; 
+    animation: border-blink 3s infinite; 
   }
   @keyframes border-blink{
     0% {
-      border-color: #ffffff; /* Color inicial del borde */
+      border-color: #ffffff; 
     }
     50% {
-      border-color: rgb(153, 0, 255); /* Color del parpadeo */
+      border-color: rgb(153, 0, 255); 
     }
     100% {
-      border-color: #ffffff; /* Color final del borde */
+      border-color: #ffffff; 
   }}
   
   
   .Igle {
-    border: 2px solid #ffffff; /* Estilo inicial del borde */
-    animation: border-blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+    border: 2px solid #ffffff; 
+    animation: border-blink 3s infinite; 
   }
   .IMGA{
     height: 500px;
@@ -294,32 +294,71 @@ opacity: 0;
     margin-left: 1190px;
  
   }
+  nose*/
+
   /*carousel*/
 
   .carousel-container {
       position: relative;
-      width: 80%;
-      max-width: 600px;
+      width: 90%;
+      max-width: 1200px;
+      border-radius: 10px;
       overflow: hidden;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #26003b;
+      box-shadow: 0 32px 64px #11001ace;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      left: 18.5%;
+      border: 2px solid transparent; /* Borde inicial */
+      transition: border 0.01s ease; /* Animación de transición */
   }
+  .carousel-container:hover {
+    border: 2px solid rgb(153, 0, 255); /* Borde final al hacer hover */
+}
 
+@keyframes borderAnimation {
+  0% {
+      border-color: white;
+  }
+  50% {
+      border-color: rgb(153, 0, 255);
+  }
+  100% {
+      border-color: white;
+  }
+}
+
+.carousel-container {
+  animation: borderAnimation 3s infinite; /* Animación continua */
+}
   .carousel {
     display: flex;
     transition: transform 0.5s ease;
   }
 
   .carousel-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     min-width: 100%;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
   }
 
   .carousel-item img {
-    width: 100%;
+    width: 25%;
     height: auto;
   }
+  .carousel-text {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 25px;
+    font-family: "DM Sans", sans-serif;
+}
+
 button {
   position: absolute;
   top: 50%;
@@ -337,6 +376,7 @@ button.prev {
 button.next {
   right: 10px;
 }
+
   /*ejeYA{
     transform: translateY(-250px);
     margin-left: 30px;
@@ -361,18 +401,19 @@ button.next {
     text-align: center;
   }
   .tituloO {
-    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+    animation: blink 3s infinite; 
   
   @keyframes blink{
     0% {
-      color: #ffffff; /* Color inicial del borde */
+      color: #ffffff; 
     }
     50% {
-      color: rgb(153, 0, 255); /* Color del parpadeo */
+      color: rgb(153, 0, 255); 
     }
     100% {
-      color: #ffffff; /* Color final del borde */
+      color: #ffffff; 
   }}
+  */
  .TituloT{
     font-family: "DM Sans", sans-serif;
     font-size: 50px;
