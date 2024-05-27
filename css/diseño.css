@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,251;1,9..40,251&display=swap');
  
 body {
-    background-color: #212121; 
     color: #ffffff; /* Color del texto */
     margin: 0;
     padding: 0;
     height: 1000vh; /* Altura total de la ventana */
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at top, rgb(153, 0, 255), #26003b, #26003b, #26003b, #26003b, #26003b, #170024, #170024,#170024); /* Fondo con degradado circular estático */
-    background-size: 1500vh 1000vh; /* Tamaño del degradado para que sea circular */
+    background: radial-gradient(circle at top, rgb(134, 0, 223), #410064, #13001f, #13001f, #13001f, #13001f, #050008, #050008,#050008); /* Fondo con degradado circular estático */
+    background-size: 500vh 1000vh; /* Tamaño del degradado para que sea circular */
     background-position: center; /* Posición del degradado en el centro */
 }
 /*prueba*/
@@ -202,7 +201,7 @@ main{
 .presentacion1{
 font-family: "DM Sans", sans-serif;
 font-size: 20px;
-width: 500px;
+width: 1000px;
 height: 228px;
 border: 2px solid #ffffff;
 padding: 10px;
@@ -601,10 +600,22 @@ button.next {
     animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
 }
 .botoncompartir{
-mix-blend-mode: multiply;
-
+width: 100px;
+ background-color: transparent;
+border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  transition: background-color 1s;
 }
+.botoncompartir:hover{
+  transform: scale(1.1);
+  background-color: rgb(134, 0, 223);
+}
+  
 .contacto{
-  border-radius: 50%;
-  border: 10px #ffffff;
+  position: relative;
+  display: inline-block;
+transform: translateX(1500px);
+transform: translateY(500px);
 }
+
