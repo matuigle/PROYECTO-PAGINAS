@@ -201,8 +201,9 @@ main{
 
 .presentacion1{
 font-family: "DM Sans", sans-serif;
+font-size: 20px;
 width: 500px;
-height: 150px;
+height: 228px;
 border: 2px solid #ffffff;
 padding: 10px;
 border-radius: 10px;
@@ -216,3 +217,174 @@ transition: transform 0.3s ease;
     justify-content: center;
     text-align: center;
     }
+.tituloP{
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    .tituloP {
+        animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+      }
+      @keyframes blink{
+        0% {
+          color: #ffffff; /* Color inicial del borde */
+        }
+        50% {
+          color: rgb(153, 0, 255); /* Color del parpadeo */
+        }
+        100% {
+          color: #ffffff; /* Color final del borde */
+      }}
+     
+    .Igle{
+        font-family: "DM Sans", sans-serif;
+        font-size: 15px;
+        width: 400px;
+        height: 157px;
+        border: 2px solid #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-left: 225px;
+        transition: transform 0.3s ease;
+        }
+    .Igle:hover{
+            transform: scale(1.1);
+}
+.ejey{
+    transform: translateY(-250px);
+}
+.Arias {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    margin-left: 1190px;
+    width: 400px;
+    height: 157px;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+  
+  .Arias {
+    border: 2px solid #ffffff; /* Estilo inicial del borde */
+    animation: border-blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+  }
+  @keyframes border-blink{
+    0% {
+      border-color: #ffffff; /* Color inicial del borde */
+    }
+    50% {
+      border-color: rgb(153, 0, 255); /* Color del parpadeo */
+    }
+    100% {
+      border-color: #ffffff; /* Color final del borde */
+  }}
+  
+  
+  .Igle {
+    border: 2px solid #ffffff; /* Estilo inicial del borde */
+    animation: border-blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+  }
+  .ImgA{
+    border: 5px #ffffff;
+    padding: 100%; 
+    margin-left: 1190px;
+  }
+  .Objt {
+    font-family: "DM Sans", sans-serif;
+    width: 1000px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }.tituloO {
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .tituloO {
+    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+  }
+  @keyframes blink{
+    0% {
+      color: #ffffff; /* Color inicial del borde */
+    }
+    50% {
+      color: rgb(153, 0, 255); /* Color del parpadeo */
+    }
+    100% {
+      color: #ffffff; /* Color final del borde */
+  }}
+ .TituloT{
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+ }
+ .TituloT {
+    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+  }
+  .Per{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    width: 300px;
+    height: 228px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 225px;
+ }
+ .Per {
+    border: 2px solid #ffffff; /* Estilo inicial del borde */
+    animation: border-blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+  }
+  @keyframes border-blink{
+    0% {
+      border-color: #ffffff; /* Color inicial del borde */
+    }
+    50% {
+      border-color: rgb(153, 0, 255); /* Color del parpadeo */
+    }
+    100% {
+      border-color: #ffffff; /* Color final del borde */
+  }}
+
+.Mant{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    width: 300px;
+    height: 228px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 1190px;
+}
+.Mant {
+    border: 2px solid #ffffff; /* Estilo inicial del borde */
+    animation: border-blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+  }
+  @keyframes border-blink{
+    0% {
+      border-color: #ffffff; /* Color inicial del borde */
+    }
+    50% {
+      border-color: rgb(153, 0, 255); /* Color del parpadeo */
+    }
+    100% {
+      border-color: #ffffff; /* Color final del borde */
+  }}
+
+.ejeYM{
+    transform: translateY(-310px);
+} 
