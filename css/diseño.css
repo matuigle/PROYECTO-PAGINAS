@@ -5,11 +5,11 @@ body {
     color: #ffffff; /* Color del texto */
     margin: 0;
     padding: 0;
-    height: 500vh; /* Altura total de la ventana */
+    height: 1000vh; /* Altura total de la ventana */
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle at top, rgb(153, 0, 255), #26003b, #26003b, #26003b, #26003b, #26003b, #170024, #170024,#170024); /* Fondo con degradado circular estático */
-    background-size: 1500vh 500vh; /* Tamaño del degradado para que sea circular */
+    background-size: 1500vh 1000vh; /* Tamaño del degradado para que sea circular */
     background-position: center; /* Posición del degradado en el centro */
 }
 /*prueba*/
@@ -208,6 +208,7 @@ border: 2px solid #ffffff;
 padding: 10px;
 border-radius: 10px;
 transition: transform 0.3s ease;
+opacity: 0;
 }
 .presentacion1:hover{
     transform: scale(1.1);
@@ -287,10 +288,58 @@ transition: transform 0.3s ease;
     border: 2px solid #ffffff; /* Estilo inicial del borde */
     animation: border-blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
   }
-  .ImgA{
+  .IMGA{
+    height: 500px;
     border: 5px #ffffff;
-    padding: 100%; 
     margin-left: 1190px;
+ 
+  }
+  /*carousel*/
+
+  .carousel-container {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+  /*ejeYA{
+    transform: translateY(-250px);
+    margin-left: 30px;
   }
   .Objt {
     font-family: "DM Sans", sans-serif;
@@ -313,7 +362,7 @@ transition: transform 0.3s ease;
   }
   .tituloO {
     animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
-  }
+  
   @keyframes blink{
     0% {
       color: #ffffff; /* Color inicial del borde */
@@ -388,3 +437,125 @@ transition: transform 0.3s ease;
 .ejeYM{
     transform: translateY(-310px);
 } 
+.futu{
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 230px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    padding: auto;
+}
+.TituloF{
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.TituloF {
+    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+  }
+
+.Objt{
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 230px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    padding: auto;
+}
+.tituloO{
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.tituloO {
+    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+  }
+.GoogleA{
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 230px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    padding: auto;
+}
+.googlea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloG{
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.tituloG {
+    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+}
+.TituloR{
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.TituloR{
+    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+}
+.Lista{
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 230px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    padding: auto;
+}
+.TituloC{
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;  
+}
+.TituloC{
+    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+}
+.concl{
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 230px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    padding: auto;
+} 
+.TituloCO{
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.TituloCO{
+    animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
+}
