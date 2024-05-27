@@ -600,3 +600,11 @@ button.next {
 .TituloCO{
     animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
 }
+.botoncompartir{
+mix-blend-mode: multiply;
+
+}
+.contacto{
+  border-radius: 50%;
+  border: 10px #ffffff;
+}
