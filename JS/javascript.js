@@ -48,8 +48,8 @@ gsap.fromTo(".presentacion1",
 const tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".tituloP", // Elemento que activa la animación
-        start: "top 90%", // Iniciar la animación cuando el elemento está en 90% de la vista
-        end: "top 40%", // Terminar la animación cuando el elemento está en 70% de la vista
+        start: "top 100%", // Iniciar la animación cuando el elemento está en 90% de la vista
+        end: "top 50%", // Terminar la animación cuando el elemento está en 70% de la vista
         scrub: true // Smooth scrubbing, animación sincronizada con el scroll
     }
 });
@@ -115,4 +115,12 @@ function prevSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
 });
+const dropbtn = document.querySelector('.dropbtn');
 
+const dropdownContent = document.querySelector('.dropdown-content');
+
+
+dropbtn.addEventListener('click', () => {
+ 
+  dropdownContent.style.display = dropdownContent.style.display === 'none' ? 'block' : 'none';
+});
