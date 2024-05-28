@@ -67,6 +67,7 @@ tl.fromTo(".tituloP",
     }
 );
 
+
 // Añadir la animación de .carousel-container a la línea de tiempo
 // Esta animación empezará automáticamente después de la animación de .tituloP
 tl.fromTo(".carousel-container", 
