@@ -7,7 +7,7 @@ body {
     height: 1000vh; /* Altura total de la ventana */
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at top, rgb(134, 0, 223), #410064, #13001f, #13001f, #13001f, #13001f, #050008, #050008,#050008); /* Fondo con degradado circular estático */
+    background: radial-gradient(circle at top, rgb(134, 0, 223), #13001f, #13001f, #13001f, #13001f, #13001f, #050008, #050008,#050008); /* Fondo con degradado circular estático */
     background-size: 500vh 1000vh; /* Tamaño del degradado para que sea circular */
     background-position: center; /* Posición del degradado en el centro */
 }
@@ -96,6 +96,8 @@ main{
 
 .p1{
     position: absolute;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);  
     z-index: 7;
     width: 400px;
     top: 45.3%;
@@ -104,6 +106,8 @@ main{
 }
 .p2{
     position: absolute;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);  
     z-index: 8;
     width: 400px;
     top: 59.8%;
@@ -113,7 +117,7 @@ main{
  .p3{
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 300;
     font-style: normal;
     font-size: 50px;
     position: absolute;
@@ -163,6 +167,8 @@ main{
 }
 .p6{
     position: absolute;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);  
     z-index: 4;
     width: 350px;
     top: 28%;
@@ -171,6 +177,8 @@ main{
 }
 .p7{
     position: absolute;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);  
     z-index: 3;
     width: 350px;
     top: 79.5%;
@@ -181,6 +189,8 @@ main{
 
 .p8{
     position: absolute;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);  
     z-index: 2;
     width: 400px;
     top: 18%;
@@ -189,6 +199,8 @@ main{
 }
 .p9{
     position: absolute;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);  
     z-index: 1;
     width: 400px;
     top: 85%;
@@ -200,7 +212,7 @@ main{
 
 .presentacion1{
 font-family: "DM Sans", sans-serif;
-font-size: 20px;
+font-size: 30px;
 width: 1000px;
 height: 228px;
 border: 2px solid #ffffff;
@@ -208,107 +220,45 @@ padding: 10px;
 border-radius: 10px;
 transition: transform 0.3s ease;
 opacity: 0;
+display: flex;
+justify-content: center;
+margin-bottom: 100px;
 }
 .presentacion1:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 .presentacion{
     display: flex;
     justify-content: center;
     text-align: center;
     }
+
 .tituloP{
     font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-style: light;
     font-size: 50px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 10px;
+    position: absolute;
+    top: 152%;
+    max-width: 500px;
     text-align: center;
+    display: flex;
+    justify-content: left;
     }
-    .tituloP {
-        animation: blink 3s infinite; /* Aplica la animación al borde del cuadro de texto */
-      }
-      @keyframes blink{
-        0% {
-          color: #ffffff; /* Color inicial del borde */
-        }
-        50% {
-          color: rgb(153, 0, 255); /* Color del parpadeo */
-        }
-        100% {
-          color: #ffffff; /* Color final del borde */
-      }}
-     /* nose:
-    .Igle{
-        font-family: "DM Sans", sans-serif;
-        font-size: 15px;
-        width: 400px;
-        height: 157px;
-        border: 2px solid #ffffff;
-        padding: 15px;
-        border-radius: 10px;
-        margin-left: 225px;
-        transition: transform 0.3s ease;
-        }
-    .Igle:hover{
-            transform: scale(1.1);
-}
-.ejey{
-    transform: translateY(-250px);
-}
-.Arias {
-    font-family: "DM Sans", sans-serif;
-    font-size: 15px;
-    margin-left: 1190px;
-    width: 400px;
-    height: 157px;
-    border: 2px solid #ffffff;
-    padding: 15px;
-    border-radius: 10px;
-}
-  
-  .Arias {
-    border: 2px solid #ffffff; 
-    animation: border-blink 3s infinite; 
-  }
-  @keyframes border-blink{
-    0% {
-      border-color: #ffffff; 
-    }
-    50% {
-      border-color: rgb(153, 0, 255); 
-    }
-    100% {
-      border-color: #ffffff; 
-  }}
-  
-  
-  .Igle {
-    border: 2px solid #ffffff; 
-    animation: border-blink 3s infinite; 
-  }
-  .IMGA{
-    height: 500px;
-    border: 5px #ffffff;
-    margin-left: 1190px;
- 
-  }
-  nose*/
 
   /*carousel*/
 
   .carousel-container {
+      overflow: hidden;
+      clip-path: inset(0 0 0 0);  
       position: relative;
       width: 90%;
       max-width: 1200px;
       border-radius: 10px;
-      overflow: hidden;
       background-color: #26003b;
       box-shadow: 0 32px 64px #11001ace;
       display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      left: 18.5%;
+      left: 30%;
       border: 2px solid transparent; /* Borde inicial */
       transition: border 0.01s ease; /* Animación de transición */
   }
@@ -361,6 +311,7 @@ opacity: 0;
 button {
   position: absolute;
   top: 50%;
+  border-radius: 10px;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   border: none;

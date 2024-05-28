@@ -44,6 +44,44 @@ gsap.fromTo(".presentacion1",
     }
 );
 
+// Crear una línea de tiempo con ScrollTrigger
+const tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".tituloP", // Elemento que activa la animación
+        start: "top 90%", // Iniciar la animación cuando el elemento está en 90% de la vista
+        end: "top 40%", // Terminar la animación cuando el elemento está en 70% de la vista
+        scrub: true // Smooth scrubbing, animación sincronizada con el scroll
+    }
+});
+
+// Añadir la animación de .tituloP a la línea de tiempo
+tl.fromTo(".tituloP", 
+    {
+        opacity: 0, 
+        x: -200
+    }, 
+    {
+        opacity: 1,
+        x: 0,
+        duration: 5
+    }
+);
+
+// Añadir la animación de .carousel-container a la línea de tiempo
+// Esta animación empezará automáticamente después de la animación de .tituloP
+tl.fromTo(".carousel-container", 
+    {
+        opacity: 0, 
+        x: 200
+    }, 
+    {
+        opacity: 1,
+        x: 0,
+        duration: 3,
+        delay: 0
+    }
+);
+
 /* carousle*/
 let currentIndex = 0;
 const items = document.querySelectorAll('.carousel-item');
@@ -76,3 +114,4 @@ function prevSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
 });
+
