@@ -104,56 +104,7 @@ main{
     left: 45%;
     transform: translate(-50%, -50%) rotate(-35deg);
 }
-@media (max-width: 576px){
-    .p1{
-        max-width: 30%;   
-    }
-@media (max-width: 768px) { 
-    .p1{
-        max-width: 40%;
-        }
-     }
-@media (max-width: 992px) { 
-    .p1{
-        max-width: 51,66666666666667%;
-        }
- }
- @media (max-width: 1200px) { 
-    .p1{
-        max-width: 62,5%;
-        }
-  }
-  @media (max-width: 1400px) { 
-    .p1{
-        max-width: 72,91666666666667%;
-        }
-   }
-@media (min-width: 576px){
-    .p1{
-        min-width: 30%;   
-    }
-@media (min-width: 768px) { 
-    .p1{
-        min-width: 40%;
-        }
-     }
-@media (min-width: 992px) { 
-    .p1{
-        min-width: 51,66666666666667%;
-        }
- }
- @media (min-width: 1200px) { 
-    .p1{
-        min-width: 62,5%;
-        }
-  }
-  @media (min-width: 1400px) { 
-    .p1{
-        min-width: 72,91666666666667%;
-        }
-   }
 
-}
 .p2{
     position: absolute;
     overflow: hidden;
