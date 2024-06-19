@@ -396,9 +396,9 @@ main {
     position: relative;
     top: 60em;
 }
+
 @media screen and (orientation:portrait) and (min-width:320px) and (max-width: 360px){
     body{ background-size: 475vh ;}
-    .top-nav{ position: fixed; padding: 0.66px 0;}
     .p1{font-size: 1.5em; width: 6em;}
     .p2{ font-size: 1em; width: 11em; top: 30%; left: 50%;}
     .p3{ font-size: 1em; width: 10em; top: 70%; left: 50%;}
@@ -408,7 +408,6 @@ main {
 }
 @media screen and (orientation:portrait) and (min-width:361px) and (max-width: 400px){
     body{ background-size: 950vh ;}
-    .top-nav{ position: fixed; padding: 2.66px 0;}
     .p1{font-size: 2em; width: 6em;}
     .p2{ font-size: 1.25em; width: 11em; top: 30%; left: 50%;}
     .p3{ font-size: 1.25em; width: 10em; top: 70%; left: 50%;}
@@ -418,10 +417,26 @@ main {
 }
 @media screen and (orientation:portrait) and (min-width:401px) and (max-width: 440px){
     body{ background-size: 1425vh ;}
-    .top-nav{ position: fixed; padding: 4.66px 0;}
     .p1{font-size: 2.5em; width: 6em;}
     .p2{ font-size: 1.5em; width: 11em; top: 30%; left: 50%;}
     .p3{ font-size: 1.5em; width: 10em; top: 70%; left: 50%;}
     .p4{width: 14.5em; top: 38%; left: 42.5%;}
     .p5{width: 14.5em; top: 45%; left: 8%;}
+}
+@media screen and (min-width:1000px){
+    body{ background-size: 1800vh;}
+    header {position: fixed;width: 100%;}
+    nav{position: fixed;width: 100%;height: 50px;}
+    .presentacion{position: relative;width: 100%;display: flex;justify-content: center;align-items: center;top: 12.5em;}
+    .presentacion1{font-family: "DM Sans", sans-serif;border-radius: 0.7em;padding: 10px;text-align: center;width: 45em;font-size: 1.8em;}
+    .tituloP{font-family: "DM Sans", sans-serif;font-size: 2.5em;width: 10em;top: 9.55em;left: 2.5em;margin: 0;}
+    .carousel-container{width: 63em;height: 25em;border-radius: 10px;top: 5em;left: 26.5%;}
+    .carousel-item img {width: 19em;height: 28em;}
+    .second-item img{width: 21em;}
+    .carousel-text
+    .p1{font-size: 2.5em; width: 5em;}
+    .p2{ font-size: 1.5em; width: 11em; top: 50%; left: 15%;}
+    .p3{ font-size: 1.5em; width: 12em; top: 54.5%; left: 85%;}
+    .p4{width: 20em; top: 29%; left: 46%;}
+    .p5{width: 20em; top: 43%; left: 34%;}
 }
