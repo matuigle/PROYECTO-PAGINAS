@@ -27,6 +27,48 @@ document.getElementById('copyButton2').addEventListener('click', function() {
         console.error('Error al copiar el número de teléfono: ', err);
     });
 });
+/*header*/
+
+/*MAIN*/
+document.addEventListener('DOMContentLoaded', function() {
+    const mainSection = document.getElementById('main-section');
+    const imageContainer = document.getElementById('image-container');
+    let lastImageTime = 0;
+    let toggleImage = true; // Variable para alternar entre las dos imágenes
+
+    if (mainSection) {
+        mainSection.addEventListener('mousemove', function(event) {
+            const currentTime = new Date().getTime();
+            if (currentTime - lastImageTime >= 100) { // 1000 ms = 1 segundo
+                createFallingImage(event.clientX, event.clientY, toggleImage);
+                lastImageTime = currentTime;
+                toggleImage = !toggleImage; // Alternar entre true y false
+            }
+        });
+    }
+
+    function createFallingImage(x, y, toggle) {
+        const image = document.createElement('img');
+        image.src = toggle ? '../img/esfera.png' : '../img/esfera2.png';  // Alternar entre las dos imágenes
+        image.classList.add('falling-image');
+        image.style.left = `${x}px`;
+        image.style.top = `${y}px`;
+        imageContainer.appendChild(image);
+
+        gsap.to(image, {
+            y: window.innerHeight,
+            duration: 2,
+            ease: "power1.in",
+            onComplete: () => image.remove()
+        });
+    }
+});
+/*parallax*/
+
+				
+/*main*/
+
+
 
 /* carousle*/
 let currentIndex = 0;
@@ -59,4 +101,33 @@ function prevSlide() {
 
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
+});
+
+
+/*card*/
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
+    const overlay = document.querySelector('.overlay');
+    
+    cards.forEach(card => {
+        card.addEventListener('click', function(event) {
+            const isOpen = card.classList.contains('open');
+            cards.forEach(c => c.classList.remove('open'));
+            if (!isOpen) {
+                card.classList.add('open');
+                overlay.style.opacity = '1';
+                overlay.style.visibility = 'visible';
+            } else {
+                overlay.style.opacity = '0';
+                overlay.style.visibility = 'hidden';
+            }
+            event.stopPropagation();
+        });
+    });
+
+    overlay.addEventListener('click', function() {
+        cards.forEach(card => card.classList.remove('open'));
+        overlay.style.opacity = '0';
+        overlay.style.visibility = 'hidden';
+    });
 });
