@@ -138,10 +138,12 @@ main {
     height: 100px;
 }
 .rotate{
-    width: 50em;
-    height: 50em;
-    transition: transform 1s ease;
-    transform-origin: center;
+    position: relative;
+    width: 40em ;
+    height: 40em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .p1{
     font-family: "DM Sans", sans-serif;
@@ -181,18 +183,18 @@ main {
 }
 .p4{
     position: absolute;
-    top: 18.5%;
-    left: 45%;
+    left: 15em;
     transform: translate(-30%, -45%);
     width: 32em;
     margin: 0;
     text-align: center;
     rotate: -40deg;
+    animation: fadeInMove 3s forwards;
 }
 .p5{
     position: absolute;
-    top: 37.5%;
-    left: 30%;
+    left: -4em;
+    top: 13em;
     rotate: 102deg;
     transform: translate(-30%, -40%) scaleX(-1);
     width: 32em;
@@ -689,7 +691,7 @@ main {
     .p4{width: 14.5em; top: 38%; left: 42.5%;}
     .p5{width: 14.5em; top: 45%; left: 8%;}
 }
-@media screen and (min-width:960px) and (max-width:1080){
+@media screen and (min-width:960px) and (max-width:1024px){
     body{ background-size: 1800vh;}
     header {position: fixed;width: 100%;}
     nav{position: fixed;width: 100%;height: 50px;}
