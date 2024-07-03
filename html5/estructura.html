@@ -18,7 +18,8 @@
     
     <header class="head">
         <nav>
-            <svg id="toggleButton" alt="Botón Imagen" class="boton-imagen" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30.667 30.667"xml:space="preserve">
+            <div class="wsp">
+                <svg id="botoncambia" alt="Botón Imagen" class="boton-imagen" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30.667 30.667"xml:space="preserve">
                 <path d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017
 		                c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382
 		                c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076
@@ -30,19 +31,20 @@
 		                c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787
 		                c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739
 		                C23.307,19.268,23.307,18.533,23.214,18.38z"/>
-            </svg>
-            <div id="informacion" class="informacion-oculta">
-            <p class="pp"><B>Teléfonos: </B><span id="numeroTelefono">+54 9 294 424-3435</span></p>
-            <button id="copyButton" class="boton"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="copy">
+                </svg>
+                <div id="informacion" class="informacion-oculta">
+                <p class="pp"><B>Teléfonos: </B><span id="numeroTelefono">+54 9 294 424-3435</span></p>
+                <button id="copyButton" class="boton"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="copy">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M21 8C21 6.34315 19.6569 5 18 5H10C8.34315 5 7 6.34315 7 8V20C7 21.6569 8.34315 23 10 23H18C19.6569 23 21 21.6569 21 20V8ZM19 8C19 7.44772 18.5523 7 18 7H10C9.44772 7 9 7.44772 9 8V20C9 20.5523 9.44772 21 10 21H18C18.5523 21 19 20.5523 19 20V8Z" fill="#0F0F0F"/>
                 <path d="M6 3H16C16.5523 3 17 2.55228 17 2C17 1.44772 16.5523 1 16 1H6C4.34315 1 3 2.34315 3 4V18C3 18.5523 3.44772 19 4 19C4.55228 19 5 18.5523 5 18V4C5 3.44772 5.44772 3 6 3Z" fill="#0F0F0F"/>
-            </svg></button>
-            <p class="pp2"><span id="numeroTelefono2"> +54 9 2944 96-2010</span></p>
-            <button id="copyButton2" class="boton2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="copy2">
+                </svg></button>
+                <p class="pp2"><span id="numeroTelefono2"> +54 9 2944 96-2010</span></p>
+                <button id="copyButton2" class="boton2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="copy2">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M21 8C21 6.34315 19.6569 5 18 5H10C8.34315 5 7 6.34315 7 8V20C7 21.6569 8.34315 23 10 23H18C19.6569 23 21 21.6569 21 20V8ZM19 8C19 7.44772 18.5523 7 18 7H10C9.44772 7 9 7.44772 9 8V20C9 20.5523 9.44772 21 10 21H18C18.5523 21 19 20.5523 19 20V8Z" fill="#0F0F0F"/>
                 <path d="M6 3H16C16.5523 3 17 2.55228 17 2C17 1.44772 16.5523 1 16 1H6C4.34315 1 3 2.34315 3 4V18C3 18.5523 3.44772 19 4 19C4.55228 19 5 18.5523 5 18V4C5 3.44772 5.44772 3 6 3Z" fill="#0F0F0F"/>
-            </svg></button>
-        </div>
+                </svg></button>
+                </div>
+                </div>
         </nav>
     
     </header> 
@@ -146,8 +148,16 @@
             <button class=" butt prev" onclick="prevSlide()">&#10094;</button>
             <button class="butt next" onclick="nextSlide()">&#10095;</button>
         </div>
+        
+        <div class="servicies">
+            <p>
+                Nuestros Servicios
+            </p>
+        </div>
+<div class="servicios">
 
         <div class="perso"> 
+            <!--    
             <div class="hue">
                 <svg class="huella" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463 463" xml:space="preserve">
                 <path d="M259.476,280.364V247.5c0-12.958-10.542-23.5-23.5-23.5s-23.5,10.542-23.5,23.5v29.672
@@ -216,6 +226,7 @@
 		c-3.849-1.533-8.21,0.345-9.743,4.192C315.998,25.488,317.876,29.851,321.724,31.383z"/>
                 </svg>
             </div>
+            \-->
             <div class="TituloT">     
                 <p>
                     Queremos <u>TU HUELLA</u> en <u>TU PAGINA</u>
@@ -223,11 +234,52 @@
             </div>
             <div class="Per">
                 <p>
-                    La personalización e ideas del cliente son algo escencial para nosotros, por eso es que le damos control creativo total de como le gustaria que sea su pagina, nos gusta decir que <u>usted da las ideas, nosotros las programamos.</u>
+                    La personalización es el núcleo de todo lo que hacemos. Cada página web que diseñamos es única y refleja los valores y la identidad de tu marca. Desde el diseño inicial hasta los detalles finales, trabajamos estrechamente contigo para asegurar que cada aspecto de tu sitio web sea exactamente como lo deseas. Esta atención al detalle y nuestro compromiso con la personalización nos distinguen de otras empresas y aseguran que tu sitio web no solo sea funcional, sino también una verdadera extensión de tu marca. Nos gusta decir que <b>usted da las ideas, nosotros las programamos</b>
                 </p>
             </div>
         </div>
-            
+        
+
+        <div class="perso1"> 
+            <!--    
+            <div class="hue">
+                <svg class="huella" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463 463" xml:space="preserve">
+                </svg>
+            </div>
+            \-->
+            <div class="TituloQ">     
+                <p>
+                    Landing Pages que Convierten <u>Visitantes</u> en <u>Clientes</u> 
+                </p>
+            </div>
+            <div class="Per1">
+                <p>
+                    Las landing pages son una herramienta esencial para captar la atención de tus visitantes y convertirlos en <B>clientes potenciales</B>. En Under Software, diseñamos landing pages que no solo son visualmente atractivas, sino también estratégicamente optimizadas para maximizar conversiones. Nos aseguramos de que cada elemento esté perfectamente alineado con tus <B>objetivos comerciales</B>. Además, nuestras landing pages son completamente personalizables, permitiéndote reflejar la identidad y los valores únicos de tu marca.
+                </p>
+            </div>
+        </div>
+
+        <div class="perso2"> 
+            <!--    
+            <div class="hue">
+                <svg class="huella" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463 463" xml:space="preserve">
+                </svg>
+            </div>
+            \-->
+            <div class="TituloE">     
+                <p>
+                    Páginas Web <u>Funcionales</u> y <u>Atractivas</u>
+                </p>
+            </div>
+            <div class="Per2">
+                <p>
+                    Cada empresa es diferente, y creemos que tu sitio web debería reflejar esa singularidad. Por eso, ofrecemos páginas web totalmente personalizables que se adaptan a tus necesidades específicas. Ya sea que necesites un sitio web sencillo para presentar tu negocio o una plataforma compleja con múltiples funcionalidades, tenemos la capacidad de crear exactamente <b>lo que imaginas.</b> Trabajamos contigo en cada paso del proceso de desarrollo para asegurarnos de que tu visión se haga realidad. Esto incluye elegir el diseño, los colores, las tipografías y los elementos interactivos que mejor <b>representen tu marca.</b>
+                </p>
+            </div>
+        </div>
+</div>
+
+<div class="precios">
 <div class="pricetag">
         Yyyyyyyyyy...........¿Nuestros precios?
 </div>
@@ -282,19 +334,7 @@
                  </div>
         </div>
 </div>
-
-        <div>
-            <div>
-                <p>
-                    Empieza Hoy
-                </p>
-            </div>
-            <div>
-                <p>
-                    No esperes más para mejorar tu presencia online. Obtén una cotización gratuita y descubre cómo Under Software puede ayudarte a alcanzar tus metas digitales. Desbloquea el verdadero potencial de tu negocio con una página web que refleje tu visión y valores. Nos encargaremos de todo, desde el diseño hasta la implementación, asegurando una experiencia sin problemas y un producto final que te encantará.
-                </p>
-            </div>
-        </div>
+</div>
                 
 
 

@@ -1,5 +1,5 @@
 /*HEADER*/
-document.getElementById('toggleButton').addEventListener('click', function() {
+document.getElementById('botoncambia').addEventListener('click', function() {
     const infoDiv = document.getElementById('informacion');
     if (infoDiv.classList.contains('informacion-visible')) {
         infoDiv.classList.remove('informacion-visible');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (mainSection) {
         mainSection.addEventListener('mousemove', function(event) {
             const currentTime = new Date().getTime();
-            if (currentTime - lastImageTime >= 100) { // 1000 ms = 1 segundo
+            if (currentTime - lastImageTime >= 90) { // 1000 ms = 1 segundo
                 createFallingImage(event.clientX, event.clientY, toggleImage);
                 lastImageTime = currentTime;
                 toggleImage = !toggleImage; // Alternar entre true y false

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,251;1,9..40,251&display=swap');
 
 body {
-    height: 500vh;
+    height: 600vh;
     width: 100%;
     margin: 0;
     color: rgb(0, 0, 0);
@@ -25,10 +25,13 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
+.wsp{
+    position: relative;
+}
 .boton-imagen {
     position: relative;
     left: 48%;
-    top: 22%;
+    top: 0.8em;
     border: 50px;
     fill: #f9efff;
     cursor: pointer;
@@ -44,6 +47,7 @@ header {
 }
 .pp{
     font-family: "DM Sans", sans-serif;
+    color: #ffffff;
     position: relative;
     margin: 0;
     bottom: 1.5em;
@@ -68,6 +72,7 @@ header {
 }
 .pp2{
     font-family: "DM Sans", sans-serif;
+    color: #ffffff;
     position: relative;
     margin: 0;
     bottom: 3em;
@@ -137,9 +142,6 @@ main {
     height: 50em;
     transition: transform 1s ease;
     transform-origin: center;
-}
-.rotate:hover{
-    transform: rotate (0deg);
 }
 .p1{
     font-family: "DM Sans", sans-serif;
@@ -393,17 +395,38 @@ main {
 }
 
 /*como trabajamos*/
+.servicios{
+    position: relative;
+    bottom: 10em;
+}
+.servicies{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 6em;
+}
+.servicies p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 4em;
+    color: #26003b;
+}
 .perso{
     position: relative;
-    bottom: 1.5em;
+    width: 101.25em;
+    height: 30em;
+    top: 11em;
+    left: 7.5em;
+    background-color: #f9efff;
+    box-shadow: 10px 10px 15px #d483ffee;
 }
 .TituloT{
     font-family: "DM Sans", sans-serif;
     position: relative;
-    top: 5em;
-    left: 1.9em;
-    width: 11em;
-    font-size: 4em;
+    top: 1.8em ;
+    left: 1em;
+    width: 5.5em;
+    font-size: 3.8em;
     text-align: left;
     color: #26003b;
 }
@@ -413,13 +436,13 @@ main {
 }
 .hue{
     position: relative;
-    top: 8em;
-    left: 10em;
-    width: 35em;
+    top: 10em;
+    left: 2.5em;
+    width: 25em;
 }
 .huella{
     position: absolute;
-    width: 35em;
+    width: 25em;
     fill: #d383ff;
     rotate: 15deg;
     transition: transform 0.3s ease;
@@ -431,14 +454,12 @@ main {
     padding: 1em;
     padding-left: 1.25em;
     border-radius: 10px;
-    background-color: #f9efff;
-    box-shadow: 10px 10px 15px #d483ffee;
     position: relative;
     font-family: "DM Sans", sans-serif;
-    font-size: 2.5em;
-    bottom: 1em;
-    left: 21.25em;
-    width: 19.8em;
+    font-size: 1.8em;
+    bottom: 9.25em;
+    left: 18em;
+    width: 35em;
 }
 .Per u{
     font-optical-sizing: auto;
@@ -446,8 +467,91 @@ main {
     font-style: normal;
 }
 
+.perso1{
+    position: relative;
+    width: 101.25em;
+    height: 30em;
+    top: 11em;
+    left: 7.5em;
+    background-color: #f9efff;
+    box-shadow: 10px 10px 15px #d483ffee;
+}
+.TituloQ{
+    font-family: "DM Sans", sans-serif;
+    position: relative;
+    top: 1.25em ;
+    left: 1em;
+    width: 6.5em;
+    font-size: 3.8em;
+    text-align: left;
+    color: #26003b;
+}
+.TituloQ u{
+    color: rgb(103, 0, 172);
+    font-weight: 900;
+}
+.Per1{
+    padding: 1em;
+    padding-left: 1.25em;
+    border-radius: 10px;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.8em;
+    bottom: 11.45em;
+    left: 18em;
+    width: 35em;
+}
+.Per1 u{
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.perso2{
+    position: relative;
+    width: 101.25em;
+    height: 30em;
+    top: 11em;
+    left: 7.5em;
+    background-color: #f9efff;
+    box-shadow: 10px 10px 15px #d483ffee;
+}
+.TituloE{
+    font-family: "DM Sans", sans-serif;
+    position: relative;
+    top: 1.88em ;
+    left: 1em;
+    width: 6.5em;
+    font-size: 3.8em;
+    text-align: left;
+    color: #26003b;
+}
+.TituloE u{
+    color: rgb(103, 0, 172);
+    font-weight: 900;
+}
+.Per2{
+    padding: 1em;
+    padding-left: 1.25em;
+    border-radius: 10px;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.8em;
+    bottom: 9.4em;
+    left: 18em;
+    width: 35em;
+}
+.Per2 u{
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
 
 /*card*/
+.precios{
+    position: relative;
+    top: 5.4em;
+}
 .pricetag{
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
@@ -542,12 +646,15 @@ main {
     z-index: 1;
 }
 .card-content {
+    position: relative;
     font-family: "DM Sans", sans-serif;
     font-size: 1.5em;
     padding: 16px;
     display: none;
     color: #333;
 }
+
+
 .card.open {
     z-index: 20;
 }
@@ -599,3 +706,9 @@ main {
     .p4{width: 20em; top: 29%; left: 46%;}
     .p5{width: 20em; top: 43%; left: 34%;}
 }
+
+
+
+
+
+
