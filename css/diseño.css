@@ -599,7 +599,8 @@ main {
     position: relative;
     justify-content: center;
     align-items: center;    
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     width: 100em;
     top: 11.8em;
@@ -684,12 +685,17 @@ main {
 
 }
 @media screen and (orientation:portrait) and (min-width:401px) and (max-width: 440px){
-    body{ background-size: 1425vh ;}
-    .p1{font-size: 2.5em; width: 6em;}
-    .p2{ font-size: 1.5em; width: 11em; top: 30%; left: 50%;}
-    .p3{ font-size: 1.5em; width: 10em; top: 70%; left: 50%;}
-    .p4{width: 14.5em; top: 38%; left: 42.5%;}
-    .p5{width: 14.5em; top: 45%; left: 8%;}
+    body{background-size: 1000vh;}
+    nav{height: 60px;}
+    main{background-size: 1000vh; height: 100vh;}
+    .falling-image{width: 50px; height: 50px;}
+    .rotate{width: 40em; height: 40em;}
+    .p1{width: 7em; font-size: 3em; text-align: center;}
+    .p2{width: 8em; font-size: 1.8em; top: 15%; left: 50%;}
+    .p3{width: 8em; font-size: 1.8em; top: 85%; left: 50%;}
+    .p4{width: 15em; top: 11em; left: 16em}
+    .p5{width: 15em; left: 7em; top: 19em;}
+
 }
 @media screen and (min-width:960px) and (max-width:1024px){
     body{ background-size: 1800vh;}
@@ -711,6 +717,9 @@ main {
 
 
 
-
-
+itsmo hueni
+sigasostenible
+hotel puerto blest
+billyjean
+lobococina
 

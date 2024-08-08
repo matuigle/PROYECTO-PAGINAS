@@ -30,7 +30,7 @@ document.getElementById('copyButton2').addEventListener('click', function() {
 /*header*/
 
 let animacion = gsap.timeline();
-animacion.from(".p4", {duration: 2.3, x: -1000, opacity: 0, filter: "blur(10px)" }, 0.5)
+animacion.from(".p4", {duration: 2.3, x: -1000, opacity: 0, filter: "blur(10px)" })
 
 .from(".p5", {duration: 2.5, x: 1000, opacity: 0, filter: "blur(10px)" }, 0)
 
